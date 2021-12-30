@@ -8,7 +8,7 @@ import iconPlus from '../images/icon-plus.svg';
 const AddToCart = ({ toAdd }) => {
 
     let [qty, setQty] = useState(1);
-    let [setProduct] = useDetails();
+    let [product, setProduct] = useDetails();
 
     useEffect(() => {
         toAdd.qty = qty;
